@@ -60,15 +60,31 @@ and description.
 `rad` asks you to verify the patch and hit `Y` again if you like what you see. It then syncs your local project state
 with your remote, allowing others to track and review the work you've done.
 
+### View your patches
+
+View your proposed patches (and those proposed by others) with `rad patch --list`.
+
+```
+$ rad patch --list
+ YOU PROPOSED 
+
+Tweak the README R0 9b77035 ahead 0, behind 0
+└── hnrky9tzysh opened by docs-tester Fri, 16 Sep 2022 18:59:37 +0000  you 
+
+ OTHERS PROPOSED 
+
+Nothing to show.
+```
+
 ## Maintainer: Track, review and merge the patch
 
-To review and merge any code, you first need to find any patches to your project that have been published to the Radicle network.
-
-### Track your peer
+To review and merge patches, you first need to find any changes to your project that have been published on the Radicle
+network through other remotes.
 
 Run `rad track` to return a list of remotes on your project.
 
 ```bash
+$ rad track
 radicle-example rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy (local)
 │
 ├── hynh7gxq3u1c7gu7wupyw99k16tz5td8n6tmwdy9s1xcfwn6zucqfy docs-tester
@@ -78,16 +94,23 @@ radicle-example rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy (local)
     └── main e2cc2f98df61de3503edfcf6904993add918cda6
 ```
 
-In the example above, you can see the canonical main branch, managed by the project's single delegate, in addition to
-two additional source trees from collaborators.
+In the example above, you can see the canonical main branch at the bottom, managed by "`you`", the project's single
+delegate, in addition to two additional source trees from collaborators.
 
 Let's say you want to track the patch from the `docs-tester` user.
 
 Use `rad track <peer-id>` to track the remote peer from your local working copy.
 
 ```
-TK
+$ rad track hynh7gxq3u1c7gu7wupyw99k16tz5td8n6tmwdy9s1xcfwn6zucqfy
+🌱 Establishing tracking relationship for rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy...
+ok Tracking relationship hynh7gxq3u1c7gu7wupyw99k16tz5td8n6tmwdy9s1xcfwn6zucqfy established
+ok Syncing peer refs from willow.radicle.garden...
+ok Remote-tracking branch peer/docs-tester/main created for hynh7gx…6zucqfy
 ```
+
+This sets up a remote in your working copy and a tracking branch named after the peer and project's default branch. In
+this example, the tracking branch is `peer/docs-tester/main`, which you can see in the last line of the above output.
 
 ### Review the patch
 

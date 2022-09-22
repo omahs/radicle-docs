@@ -24,7 +24,8 @@ while also eliminating the reliance and risk on these corporate platforms.
 Two interlacing clients create this experience.
 
 1. The **[`rad` command-line
-   tool](https://app.radicle.xyz/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree)**, which interacts with Git and the Radicle network to help you host code or collaborate on projects.
+   tool](https://app.radicle.xyz/seeds/seed.alt-clients.radicle.xyz/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao)**,
+   which interacts with Git and the Radicle network to help you host code or collaborate on projects.
 2. The **[web app](https://app.radicle.xyz)**, which provides a visual interface for discovering projects, viewing
    code, and viewing patches from collaborators.
 

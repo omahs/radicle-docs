@@ -1,6 +1,6 @@
 ---
 id: patches
-title: Collaborate on and merge patches
+title: Collaborate on code with patches
 ---
 
 With patches, Radicle's equivalent to pull requests, you can collaborate with contributors on changes to your shared
@@ -21,15 +21,14 @@ breaking changes.
 
 ## Contributor: Create a patch
 
-If you haven't already, [clone](using-radicle/clone.md) the project you want to collaborate on. Make a change and commit
-it:
+If you haven't already, [clone](using-radicle/clone.md) the project you want to collaborate on. Make a change, commit
+it, and push it to your remote:
 
 ```bash
 git add <filename>
 git commit -m "<your commit message>"
+rad push
 ```
-
-Next, push your changes to your remote with `rad push`.
 
 Create your patch and verify the commits you'd like to add to your patch:
 

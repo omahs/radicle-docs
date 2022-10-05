@@ -43,6 +43,8 @@ const sidebars = {
     'governance/README',
     'governance/transition-dao',
     'governance/how-governance-works',
+    'governance/treasury',
+    'governance/get-started',
     'governance/obtain-rad',
   ],
 };

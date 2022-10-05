@@ -58,7 +58,7 @@ const config = {
         },
         items: [
           {
-            href: '/what-is-radicle',
+            href: '/get-started',
             label: 'User Hub',
             position: 'left',
           },

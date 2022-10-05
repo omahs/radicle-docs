@@ -35,12 +35,6 @@ const sidebars = {
       collapsed: false,
       items: ['understanding-radicle/why-radicle', 'understanding-radicle/how-it-works', 'understanding-radicle/glossary', 'understanding-radicle/faq']
     },
-    {
-      type: 'category',
-      label: 'Get involved',
-      collapsed: false,
-      items: ['get-involved/join-the-community', 'get-involved/obtain-rad']
-    }
   ],
   communitySidebar: [
     'community/community',
@@ -49,6 +43,7 @@ const sidebars = {
     'governance/README',
     'governance/transition-dao',
     'governance/how-governance-works',
+    'governance/obtain-rad',
   ],
 };
 

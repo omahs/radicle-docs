@@ -171,7 +171,7 @@ community channels see [Join our Community][cc].
 [cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
 [hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
-[cc]: get-involved/community.md
+[cc]: community/README.md
 
 [sd]: /img/seed-dashboard-search.png
 
